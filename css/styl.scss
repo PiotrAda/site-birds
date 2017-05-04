@@ -16,6 +16,12 @@ body {
   transform: translate(0, -50%);
   right: 50px;
   z-index: 1;
+  @media (max-width: 667px) {
+    display: none;
+  }
+  @media (min-width: 668px) and (max-width: 960px) {
+    right: 25px;
+  }
   a{
     position: relative;
     display: block;
@@ -41,7 +47,13 @@ header{
   background: linear-gradient(9deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-bottom: 1px solid #fff;
   transform: skewY(2deg);
-  top: -50px;
+  top: -40px;
+  @media (max-width: 667px) {
+    top: -20px;
+  }
+  @media (min-width: 668px) and (max-width: 960px) {
+    top: -30px;
+  }
   .welcome{
     margin-top: 10px;
     float:right;
@@ -60,6 +72,10 @@ header{
 .section{
   display: inline-block;
   width: 0%;
+  @media (max-width: 667px) {
+    width: 98%;
+    margin: 0 1%;
+  }
   h1{
     padding-left: 60%;
     font-family: 'Cormorant Infant', serif;
@@ -74,6 +90,16 @@ header{
     border: 1px solid #003300;
     border-radius: 0 5px 5px 0;
     white-space: nowrap;
+    @media (max-width: 667px) {
+      padding: 0;
+      font-size: 30px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    @media (min-width: 668px) and (max-width: 960px) {
+      padding-left: 30%;
+      font-size: 30px;
+    }
   }
 }
 
@@ -90,8 +116,15 @@ header{
   .intro{
     clear: both;
     margin: 0 auto;
-    width: 50%;
+    max-width: 960px;
+    width: 70%;
     text-align: center;
+    @media (max-width: 667px) {
+      width: 98%;
+    }
+    @media (min-width: 668px) and (max-width: 960px) {
+      width: 80%;
+    }
     h2{
       font-family: 'Dosis', sans-serif;
       color: #003300;
@@ -107,7 +140,14 @@ header{
   .block-container{
     display: block;
     margin: 0 auto;
-    width: 50%;
+    max-width: 960px;
+    width: 70%;
+    @media (max-width: 667px) {
+      width: 98%;
+    }
+    @media (min-width: 668px) and (max-width: 960px) {
+      width: 80%;
+    }
     .offer:hover{
       background-color: rgb(255, 255, 255);
       background-color: rgba(255, 255, 255, 0.7);
@@ -123,19 +163,45 @@ header{
       background-color: rgba(255, 255, 255, 0.5);
       border: 1px solid #fff;
       border-radius: 5px;
+      @media (max-width: 667px) {
+        margin: 2% auto;
+        width: 98%;
+        height: 100px;
+      }
+      @media (min-width: 668px) and (max-width: 960px) {
+        height: 120px;
+      }
       img{
         border: 1px solid #000;
         opacity: 0.9;
         float: left;
         margin: 15px;
         height: 120px;
-        width: 120px;;
+        width: 120px;
+        @media (max-width: 667px) {
+          margin: 10px;
+          height: 80px;
+          width: 80px;
+        }
+        @media (min-width: 668px) and (max-width: 960px) {
+          margin: 10px;
+          height: 100px;
+          width: 100px;
+        }
       }
       h2{
         font-family: 'Dosis', sans-serif;
         color: #003300;
         height: 100%;
-        font-size: 22px;
+        font-size: 21px;
+        @media (max-width: 667px) {
+          font-size: 18px;
+          margin: 5px 5px;
+        }
+        @media (min-width: 668px) and (max-width: 960px) {
+          font-size: 18px;
+          margin: 5px 5px;
+        }
       }
     }
     .left{
@@ -143,6 +209,11 @@ header{
     }
     .right{
       float: right;
+    }
+    .left, .right {
+      @media (max-width: 667px) {
+        float: none;
+      }
     }
   }
 }
@@ -165,8 +236,17 @@ header{
     border: 1px solid #fff;
     border-radius: 5px;
     padding: 20px;
+    @media (max-width: 667px) {
+      padding: 10px;
+      width: 98%;
+    }
+    @media (min-width: 668px) and (max-width: 960px) {
+      padding: 10px;
+      width: 80%;
+    }
     p{
       font-family: 'Dosis', sans-serif;
+      font-size: 17px;
       a{
         text-decoration: none;
         color: #003300;
@@ -206,12 +286,20 @@ header{
     border-radius: 5px;
     width: 100%;
     border: 1px solid #fff;
+    @media (max-width: 667px) {
+      margin: 5px auto;
+      width: 98%;
+    }
+    @media (min-width: 668px) and (max-width: 960px) {
+      margin: 5px auto;
+      width: 80%;
+    }
     p{
       text-align: justify;
       font-family: 'Dosis', sans-serif;
       font-weight: 500;
       margin: 10px 10px;
-      font-size: 18px;
+      font-size: 17px;
       color: #003300;
     }
   }
@@ -237,6 +325,11 @@ header{
       height: 400px;
       border: 2px solid #000;
       transition: all .2s ease-in-out;
+      @media (max-width: 667px) {
+        margin: 10px;
+        width: 90%;
+        height: auto;
+      }
     }
     img:hover{
       transform: scale(1.1);
@@ -262,6 +355,9 @@ header{
   	width: 650px;
   	margin-top:	100px;
   	z-index: 2;
+    @media (max-width: 667px) {
+      width: 100%;
+    }
     #modal-left-button, #modal-right-button {
     	position: absolute;
     	cursor: pointer;
@@ -271,6 +367,9 @@ header{
     	box-sizing: border-box;
     	width: 55px;
     	height: 50px;
+      @media (max-width: 667px) {
+        display: none;
+      }
     }
     #modal-left-button{
     	position: absolute;
@@ -336,6 +435,9 @@ header{
     background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
+    @media (max-width: 667px) {
+      width: 98%;
+    }
     h2{
       text-align: center;
       font-size: 30px;

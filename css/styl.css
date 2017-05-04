@@ -14,6 +14,12 @@ body {
   transform: translate(0, -50%);
   right: 50px;
   z-index: 1; }
+  @media (max-width: 667px) {
+    #side-buttons {
+      display: none; } }
+  @media (min-width: 668px) and (max-width: 960px) {
+    #side-buttons {
+      right: 25px; } }
   #side-buttons a {
     position: relative;
     display: block;
@@ -38,7 +44,13 @@ header {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-bottom: 1px solid #fff;
   transform: skewY(2deg);
-  top: -50px; }
+  top: -40px; }
+  @media (max-width: 667px) {
+    header {
+      top: -20px; } }
+  @media (min-width: 668px) and (max-width: 960px) {
+    header {
+      top: -30px; } }
   header .welcome {
     margin-top: 10px;
     float: right;
@@ -54,6 +66,10 @@ header {
 .section {
   display: inline-block;
   width: 0%; }
+  @media (max-width: 667px) {
+    .section {
+      width: 98%;
+      margin: 0 1%; } }
   .section h1 {
     padding-left: 60%;
     font-family: 'Cormorant Infant', serif;
@@ -68,6 +84,16 @@ header {
     border: 1px solid #003300;
     border-radius: 0 5px 5px 0;
     white-space: nowrap; }
+    @media (max-width: 667px) {
+      .section h1 {
+        padding: 0;
+        font-size: 30px;
+        border-radius: 5px;
+        text-align: center; } }
+    @media (min-width: 668px) and (max-width: 960px) {
+      .section h1 {
+        padding-left: 30%;
+        font-size: 30px; } }
 
 #slide-1 {
   position: relative;
@@ -82,8 +108,15 @@ header {
   #slide-1 .intro {
     clear: both;
     margin: 0 auto;
-    width: 50%;
+    max-width: 960px;
+    width: 70%;
     text-align: center; }
+    @media (max-width: 667px) {
+      #slide-1 .intro {
+        width: 98%; } }
+    @media (min-width: 668px) and (max-width: 960px) {
+      #slide-1 .intro {
+        width: 80%; } }
     #slide-1 .intro h2 {
       font-family: 'Dosis', sans-serif;
       color: #003300;
@@ -97,7 +130,14 @@ header {
   #slide-1 .block-container {
     display: block;
     margin: 0 auto;
-    width: 50%; }
+    max-width: 960px;
+    width: 70%; }
+    @media (max-width: 667px) {
+      #slide-1 .block-container {
+        width: 98%; } }
+    @media (min-width: 668px) and (max-width: 960px) {
+      #slide-1 .block-container {
+        width: 80%; } }
     #slide-1 .block-container .offer:hover {
       background-color: white;
       background-color: rgba(255, 255, 255, 0.7); }
@@ -111,6 +151,14 @@ header {
       background-color: rgba(255, 255, 255, 0.5);
       border: 1px solid #fff;
       border-radius: 5px; }
+      @media (max-width: 667px) {
+        #slide-1 .block-container .offer {
+          margin: 2% auto;
+          width: 98%;
+          height: 100px; } }
+      @media (min-width: 668px) and (max-width: 960px) {
+        #slide-1 .block-container .offer {
+          height: 120px; } }
       #slide-1 .block-container .offer img {
         border: 1px solid #000;
         opacity: 0.9;
@@ -118,15 +166,36 @@ header {
         margin: 15px;
         height: 120px;
         width: 120px; }
+        @media (max-width: 667px) {
+          #slide-1 .block-container .offer img {
+            margin: 10px;
+            height: 80px;
+            width: 80px; } }
+        @media (min-width: 668px) and (max-width: 960px) {
+          #slide-1 .block-container .offer img {
+            margin: 10px;
+            height: 100px;
+            width: 100px; } }
       #slide-1 .block-container .offer h2 {
         font-family: 'Dosis', sans-serif;
         color: #003300;
         height: 100%;
-        font-size: 22px; }
+        font-size: 21px; }
+        @media (max-width: 667px) {
+          #slide-1 .block-container .offer h2 {
+            font-size: 18px;
+            margin: 5px 5px; } }
+        @media (min-width: 668px) and (max-width: 960px) {
+          #slide-1 .block-container .offer h2 {
+            font-size: 18px;
+            margin: 5px 5px; } }
     #slide-1 .block-container .left {
       float: left; }
     #slide-1 .block-container .right {
       float: right; }
+    @media (max-width: 667px) {
+      #slide-1 .block-container .left, #slide-1 .block-container .right {
+        float: none; } }
 
 #slide-2 {
   min-height: 100vh;
@@ -146,8 +215,17 @@ header {
     border: 1px solid #fff;
     border-radius: 5px;
     padding: 20px; }
+    @media (max-width: 667px) {
+      #slide-2 .description {
+        padding: 10px;
+        width: 98%; } }
+    @media (min-width: 668px) and (max-width: 960px) {
+      #slide-2 .description {
+        padding: 10px;
+        width: 80%; } }
     #slide-2 .description p {
-      font-family: 'Dosis', sans-serif; }
+      font-family: 'Dosis', sans-serif;
+      font-size: 17px; }
       #slide-2 .description p a {
         text-decoration: none;
         color: #003300;
@@ -180,12 +258,20 @@ header {
     border-radius: 5px;
     width: 100%;
     border: 1px solid #fff; }
+    @media (max-width: 667px) {
+      #slide-3 .experience {
+        margin: 5px auto;
+        width: 98%; } }
+    @media (min-width: 668px) and (max-width: 960px) {
+      #slide-3 .experience {
+        margin: 5px auto;
+        width: 80%; } }
     #slide-3 .experience p {
       text-align: justify;
       font-family: 'Dosis', sans-serif;
       font-weight: 500;
       margin: 10px 10px;
-      font-size: 18px;
+      font-size: 17px;
       color: #003300; }
 
 #slide-4 {
@@ -208,6 +294,11 @@ header {
       height: 400px;
       border: 2px solid #000;
       transition: all .2s ease-in-out; }
+      @media (max-width: 667px) {
+        #slide-4 #references img {
+          margin: 10px;
+          width: 90%;
+          height: auto; } }
     #slide-4 #references img:hover {
       transform: scale(1.1);
       cursor: pointer; }
@@ -230,6 +321,9 @@ header {
     width: 650px;
     margin-top: 100px;
     z-index: 2; }
+    @media (max-width: 667px) {
+      #modal-main #modal-container {
+        width: 100%; } }
     #modal-main #modal-container #modal-left-button, #modal-main #modal-container #modal-right-button {
       position: absolute;
       cursor: pointer;
@@ -239,6 +333,9 @@ header {
       box-sizing: border-box;
       width: 55px;
       height: 50px; }
+      @media (max-width: 667px) {
+        #modal-main #modal-container #modal-left-button, #modal-main #modal-container #modal-right-button {
+          display: none; } }
     #modal-main #modal-container #modal-left-button {
       position: absolute;
       top: 50%;
@@ -293,6 +390,9 @@ header {
     background-color: white;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px; }
+    @media (max-width: 667px) {
+      #slide-5 #contact {
+        width: 98%; } }
     #slide-5 #contact h2 {
       text-align: center;
       font-size: 30px;
