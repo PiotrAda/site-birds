@@ -70,6 +70,8 @@ header{
 }
 
 .section{
+  position: absolute;
+  top: 100px;
   display: inline-block;
   width: 0%;
   @media (max-width: 667px) {
@@ -82,7 +84,6 @@ header{
     max-width: 1080px;
     width: 100%;
     font-size: 35px;
-    margin: 50px 0;
     color: #003300;
     text-align: left;
     background-color: rgb(255, 255, 255);
@@ -100,6 +101,10 @@ header{
       padding-left: 30%;
       font-size: 30px;
     }
+    @media (min-width: 961px) and (max-width: 1080px) {
+      padding-left: 45%;
+      font-size: 30px;
+    }
   }
 }
 
@@ -112,7 +117,7 @@ header{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  padding: 100px 0 50px 0;
+  padding: 200px 0 50px 0;
   .intro{
     clear: both;
     margin: 0 auto;
@@ -194,13 +199,12 @@ header{
         color: #003300;
         height: 100%;
         font-size: 21px;
+        margin: 5px 5px;
         @media (max-width: 667px) {
           font-size: 18px;
-          margin: 5px 5px;
         }
         @media (min-width: 668px) and (max-width: 960px) {
           font-size: 18px;
-          margin: 5px 5px;
         }
       }
     }
@@ -219,9 +223,10 @@ header{
 }
 
 #slide-2{
+  position: relative;
   min-height: 100vh;
   height: 100%;
-  padding:  100px 0 50px 0;
+  padding:  200px 0 50px 0;
   background:url('../img/slide2.jpg') 50% 0 no-repeat fixed;
   background-size: cover;
   -webkit-background-size: cover;
@@ -240,7 +245,7 @@ header{
       padding: 10px;
       width: 98%;
     }
-    @media (min-width: 668px) and (max-width: 960px) {
+    @media (min-width: 668px) and (max-width: 1280px) {
       padding: 10px;
       width: 80%;
     }
@@ -264,9 +269,10 @@ header{
 }
 
 #slide-3{
+  position: relative;
   min-height: 100vh;
   height: 100%;
-  padding:  100px 0 50px 0;
+  padding:  200px 0 50px 0;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   background:url('../img/slide3.jpg') 50% 0 no-repeat fixed;
@@ -290,7 +296,7 @@ header{
       margin: 5px auto;
       width: 98%;
     }
-    @media (min-width: 668px) and (max-width: 960px) {
+    @media (min-width: 668px) and (max-width: 1280px) {
       margin: 5px auto;
       width: 80%;
     }
@@ -306,9 +312,10 @@ header{
 }
 
 #slide-4{
+  position: relative;
   min-height: 100vh;
   height: 100%;
-  padding:  100px 0 50px 0;
+  padding:  200px 0 50px 0;
   background:url('../img/slide4.jpg') 50% 0 no-repeat fixed;
   background-size: cover;
   -webkit-background-size: cover;
@@ -319,13 +326,16 @@ header{
     max-width: 1080px;
     margin: 0 auto;
     text-align: center;
+    @media (max-width: 1080px) {
+      padding: 0 60px;
+    }
     img{
       margin: 20px;
       width: 280px;
       height: 400px;
       border: 2px solid #000;
       transition: all .2s ease-in-out;
-      @media (max-width: 667px) {
+      @media (max-width: 744px) {
         margin: 10px;
         width: 90%;
         height: auto;
@@ -422,7 +432,7 @@ header{
   position: relative;
   height: 100%;
   min-height: 100vh;
-  padding: 50px 0 50px 0;
+  padding: 200px 0 50px 0;
   background:url('../img/slide5.jpg') 50% 0 no-repeat fixed;
   background-size: cover;
   -webkit-background-size: cover;
